@@ -1,0 +1,28 @@
+Ë
+
+    Žo
+g9  ã                   ó   — d dl mZ d„ Zy)é    )ÚMySQLdbc                 ó  — d}| j                   j                  t        j                  j                  «      }|j                  ||d   |d   |d   |d   f«       | j                   j
+                  «        |j                  «        y)NzÍ
+        INSERT INTO contact (
+            name,
+            email,
+            subject,
+            message
+        ) VALUES (
+            %s,
+            %s,
+            %s,
+            %s
+        )
+    ÚnameÚemailÚsubjectÚmessageT)Ú
+connectionÚcursorr   ÚcursorsÚ
+DictCursorÚexecuteÚcommitÚclose)ÚmysqlÚformÚsqlÚcurs       úOC:\Users\andre.ataide\Luferat\Python\jocablog\JocaBlog\functions\db_contacts.pyÚsave_contactr      sz   € ð€Cð ×
+Ñ
+×
+!Ñ
+!¤'§/¡/×"<Ñ"<Ó
+=€CØ‡KKØˆV‰ØˆW‰
+ØˆY‰ØˆY‰ð	ô ð 
+×Ñ×ÑÔØ‡II„Kàó    N)Ú
+flask_mysqldbr   r   © r   r   Ú<module>r      s
+   ðÝ !ór   
