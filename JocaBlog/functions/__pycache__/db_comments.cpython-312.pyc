@@ -1,0 +1,32 @@
+Ë
+
+    ãa
+gà  ã                   ó   — d dl mZ d„ Zd„ Zy)é    )ÚMySQLdbc                 ó  — d}| j                   j                  t        j                  j                  «      }|j                  ||d   |d   |d   |d   f«       | j                   j
+                  «        |j                  «        y)Nz~
+        INSERT INTO comment (com_article, com_author_name, com_author_email, com_comment)
+        VALUE (%s, %s, %s, %s)
+    ÚartidÚnameÚemailÚcommentÚEnviado)Ú
+connectionÚcursorr   ÚcursorsÚ
+DictCursorÚexecuteÚcommitÚclose)ÚmysqlÚformÚsqlÚcurs       úOC:\Users\andre.ataide\Luferat\Python\jocablog\JocaBlog\functions\db_comments.pyÚsave_commentr      sp   € ð€Cð ×
+Ñ
+×
+!Ñ
+!¤'§/¡/×"<Ñ"<Ó
+=€CØ‡KKd˜7‘m T¨&¡\°4¸±=À$ÀyÁ/ÐTÔUØ	×Ñ×ÑÔØ‡II„Kàó    c                 óÖ   — d}| j                   j                  t        j                  j                  «      }|j                  ||f«       |j
+                  «       }|j                  «        |S )Nu  
+        SELECT
+            com_id, com_author_name, com_comment,
+            DATE_FORMAT(com_date, '%%d/%%m/%%Y Ã s %%H:%%i') AS com_datebr
+        FROM comment 
+        WHERE com_article = %s
+            AND com_status = 'on'
+        ORDER BY com_date DESC;
+    )r
+   r   r   r   r
+   r   Úfetchallr   )r   r   r   r   Úcommentss        r   Úget_commentsr      sT   € ð€Cð ×
+Ñ
+×
+!Ñ
+!¤'§/¡/×"<Ñ"<Ó
+=€CØ‡KKeYÔØ|‰|‹~€HØ‡II„Kà€Or   N)Ú
+flask_mysqldbr   r   r   © r   r   Ú<module>r      s   ðÝ !òór   
